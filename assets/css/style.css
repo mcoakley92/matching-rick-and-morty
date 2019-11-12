@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* keeps original size */
+}
+
+/* resets all items */
+
+body {
+    height: 100vh;
+    background: purple;
+    
+    
+}
+
+.game-board {
+    width: 640px;
+    height: 640px;
+    display: flex; 
+    flex-wrap: wrap;
+    
+    /* DEFAULT flex =
+    flex-item {
+    flex: 1;
+    }
+    flex-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    WHICH MEANS!
+    1. items - each one takes up same amount of space on the screen
+    2. container - your items should be layed out in a row
+    3. just one row
+    4. positioned from left to right
+    5. stretched out across the containers height
+    BUT!!
+    when styling width and height in .card, height changes but width does not - due to "nowrap", which prevents items being layed out across multipe rows. So we overwrite this
+    */
+    border: 2px solid lime;
+}
+
+.card {
+    border 2px solid black;
+    width: 25%;
+    height: 33.33%;
+}
+
+.card-back,
+.card-front {
+    border: 2px solid pink;
+}
+
