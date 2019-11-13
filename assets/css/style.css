@@ -70,6 +70,11 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-
+    backface-visibility: hidden;
 }
+
+.card-front{
+    transform: rotateY(180deg);/*flips front back around, after first flip and hiding back visability*/
+    
+} 
 
