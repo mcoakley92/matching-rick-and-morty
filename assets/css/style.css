@@ -20,7 +20,6 @@ body {
     margin: auto; /*centers vertically and horizontally*/
     display: flex; 
     flex-wrap: wrap;
-    
     /* DEFAULT flex =
     flex-item {
     flex: 1;
@@ -41,6 +40,7 @@ body {
     when styling width and height in .card, height changes but width does not - due to "nowrap", which prevents items being layed out across multipe rows. So we overwrite this
     */
     border: 2px solid lime;
+    perspective: 1000px; /*makes game container 3D*/
 }
 
 .card {
@@ -50,6 +50,8 @@ body {
     margin: 5px;
     position: relative;
     transform: scale(1); /* starting point for transform: scale (.97)*/
+    transform-style: preserve-3d; /*inserts card into the 3D space in the game board*/
+    transition: transform .5s; /*time allows you to observe 3D effect?*/
 }
 
 .card:active {
