@@ -16,24 +16,45 @@ function flipCard() {
         hasCardFlipped = false;
         secondClick = this;
 
-        //do cards match? - must check if the data-card from 1st&2nd card are same. If they are, we remove EventListener to prevent them being clicked again
-        //if its not, then we un-flip the cards back to original state
-        if (firstClick.dataset.card ===
-            secondClick.dataset.card) {
-            //it's a match!
-            firstClick.removeEventListener("click", flipCard);
-            secondClick.removeEventListener("click", flipCard);
-        }
-        else {
-            //not a match
-            setTimeout(() => {
-                firstClick.classList.remove("flip");
-                secondClick.classList.remove("flip");
-            }, 1500);
-        }
+        checkForMatch()
+    }
+}
+
+/*function checkForMatch() { //do cards match? - must check if the data-card from 1st&2nd card are same. If they are, we remove EventListener to prevent them being clicked again
+    //if its not, then we un-flip the cards back to original state
+
+    if (firstClick.dataset.card ===
+        secondClick.dataset.card) { //it's a match!
+        disableCards();
+    }
+    else { //not a match
+        unflipCards();
     }
 
+}*/ /*ALL OF THIS DOES SAME AS NEXT LINE! (ternary block)*/
+
+function checkForMatch(){
+    let isMatch = firstClick.dataset.card ===
+        secondClick.dataset.card;
+        
+        isMatch ? disableCards() : unflipCards();
 }
+
+function disableCards() {
+    firstClick.removeEventListener("click", flipCard);
+    secondClick.removeEventListener("click", flipCard);
+
+}
+
+function unflipCards() {
+     setTimeout(() => {
+            firstClick.classList.remove("flip");
+            secondClick.classList.remove("flip");
+        }, 1500);
+}
+
+
+
 /*"this" access the classlist of the "card", and then we toggle the flip class*/
 allCards.forEach(card => card.addEventListener("click", flipCard));
 /*loops through that list - into each one of the cards, we are going to attach an Eventlistener. When that event is fired, we are going to execute a functoin named flipCard*/
