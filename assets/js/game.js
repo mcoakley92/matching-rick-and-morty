@@ -2,10 +2,12 @@ const allCards = document.querySelectorAll(".card");
 /*makes list of all card elemets, stores it in const allCards*/
 
 let hasCardFlipped = false;
+let lockBoard = false;
 let firstClick, secondClick;
 
-
 function flipCard() {
+    if (lockBoard) return;
+    
     this.classList.add("flip"); /*changed toggle to add so we can add a condition*/
     if (!hasCardFlipped) {
         /*first click*/
@@ -47,9 +49,13 @@ function disableCards() {
 }
 
 function unflipCards() {
+    lockBoard = true;
+    
      setTimeout(() => {
             firstClick.classList.remove("flip");
             secondClick.classList.remove("flip");
+            
+            lockBoard =false
         }, 1500);
 }
 
