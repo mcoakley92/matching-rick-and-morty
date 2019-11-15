@@ -64,6 +64,14 @@ function unflipCards() {
 function resetBoard(){
     [hasCardFlipped, lockBoard] = [false, false]; //ES6 destructing assignment
     [firstClick, secondClick] = [null, null];
+}
+    
+(function shuffle() {
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+})();
 
 /*"this" access the classlist of the "card", and then we toggle the flip class*/
 allCards.forEach(card => card.addEventListener("click", flipCard));
