@@ -47,7 +47,7 @@ function disableCards() {
     firstClick.removeEventListener("click", flipCard);
     secondClick.removeEventListener("click", flipCard);
 
-resetBoard()
+resetBoard();
 }
 
 function unflipCards() {
@@ -57,7 +57,7 @@ function unflipCards() {
             firstClick.classList.remove("flip");
             secondClick.classList.remove("flip");
             
-            resetBoard =false
+            resetBoard();
         }, 1500);
 }
 
@@ -67,7 +67,7 @@ function resetBoard(){
 }
     
 (function shuffle() {
-    cards.forEach(card => {
+    allCards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
     });
