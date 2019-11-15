@@ -2,11 +2,12 @@ const allCards = document.querySelectorAll(".card");
 /*makes list of all card elemets, stores it in const allCards*/
 
 let hasCardFlipped = false;
-let lockBoard = false;
+let lockBoard = false; //locks board until mismatching cards have been flipped back
 let firstClick, secondClick;
 
 function flipCard() {
     if (lockBoard) return;
+    if (this === firstClick) return;
     
     this.classList.add("flip"); /*changed toggle to add so we can add a condition*/
     if (!hasCardFlipped) {
@@ -46,6 +47,7 @@ function disableCards() {
     firstClick.removeEventListener("click", flipCard);
     secondClick.removeEventListener("click", flipCard);
 
+resetBoard()
 }
 
 function unflipCards() {
@@ -55,11 +57,13 @@ function unflipCards() {
             firstClick.classList.remove("flip");
             secondClick.classList.remove("flip");
             
-            lockBoard =false
+            resetBoard =false
         }, 1500);
 }
 
-
+function resetBoard(){
+    [hasCardFlipped, lockBoard] = [false, false]; //ES6 destructing assignment
+    [firstClick, secondClick] = [null, null];
 
 /*"this" access the classlist of the "card", and then we toggle the flip class*/
 allCards.forEach(card => card.addEventListener("click", flipCard));
