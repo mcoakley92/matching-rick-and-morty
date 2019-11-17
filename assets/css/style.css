@@ -17,6 +17,7 @@ body {
 .game-board {
     width: 640px;
     height: 640px;
+    background-color: black;
     margin: auto; /*centers vertically and horizontally*/
     display: flex; 
     flex-wrap: wrap;
@@ -39,7 +40,7 @@ body {
     BUT!!
     when styling width and height in .card, height changes but width does not - due to "nowrap", which prevents items being layed out across multipe rows. So we overwrite this
     */
-    border: 2px solid lime;
+    border: 2px solid black;
     perspective: 1000px; /*makes game container 3D*/
 }
 
@@ -48,6 +49,7 @@ body {
     width: calc(25% - 10px);
     height: calc(33.33% - 10px); /*allows us to take 10px(margin) off*/
     margin: 5px;
+    z-index: 2;
     position: relative;
     transform: scale(1); /* starting point for transform: scale (.97)*/
     transform-style: preserve-3d; /*inserts card into the 3D space in the game board*/
