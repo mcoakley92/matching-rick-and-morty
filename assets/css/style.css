@@ -67,7 +67,7 @@ body {
 
 .card-back,
 .card-front {
-    border: 2px solid pink;
+    border: 2px solid #21eb3f;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -77,6 +77,6 @@ body {
 
 .card-front{
     transform: rotateY(180deg);/*flips front back around, after first flip and hiding back visability*/
-    
+    border: black;
 } 
 
