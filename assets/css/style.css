@@ -14,6 +14,11 @@ body {
     
 }
 
+.overlay {
+    position:fixed;
+    
+}
+
 .game-board {
     width: 640px;
     height: 640px;
