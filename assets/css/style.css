@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    background-color: #007bff;
+    background-image: url("../img/background.jpg");
     display: flex;
     
     
