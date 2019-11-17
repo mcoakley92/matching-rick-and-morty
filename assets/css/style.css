@@ -29,15 +29,14 @@ body {
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-        
-}
+    }
 
-.overlay-button {
-     background-color: rgba(0, 0, 0, 0.8);
+    .overlay-button {
+     background-color: rgba(0, 0, 0, 0.5);
      color: 39bdab;
-     font-size: 5em;
-
-}
+    font-size: 4em;
+    border:rgba(0, 0, 0, 0)
+    }
 
 .game-board {
     width: 640px;
