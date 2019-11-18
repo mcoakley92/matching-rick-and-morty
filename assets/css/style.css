@@ -18,14 +18,18 @@ body {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
     color: 39bdab;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .overlay-home.visable {
+        display: flex;
     }
 
     .overlay-button {
