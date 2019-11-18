@@ -1,19 +1,3 @@
-/*
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready();
-}
-
-function ready() {
-    let overlays = Array.from(document.getElementsByClassName('overlay-text'));
-    
-       overlays.forEach(overlay => {
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('visible');
-              });
-    }); */
-
 const allCards = document.querySelectorAll(".card");
 /*makes list of all card elemets, stores it in const allCards*/
 
@@ -44,21 +28,18 @@ function flipCard() {
 /*function checkForMatch() { //do cards match? - must check if the data-card from 1st&2nd card are same. If they are, we remove EventListener to prevent them being clicked again
     //if its not, then we un-flip the cards back to original state
 
-    if (firstClick.dataset.card ===
+   
+
+}*/ /*ALL OF THIS DOES SAME AS NEXT LINE! (ternary block)*/
+
+function checkForMatch(){
+     if (firstClick.dataset.card ===
         secondClick.dataset.card) { //it's a match!
         disableCards();
     }
     else { //not a match
         unflipCards();
     }
-
-}*/ /*ALL OF THIS DOES SAME AS NEXT LINE! (ternary block)*/
-
-function checkForMatch(){
-    let isMatch = firstClick.dataset.card ===
-        secondClick.dataset.card;
-        
-        isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
@@ -91,13 +72,31 @@ function resetBoard(){
     });
 })();
 
+
+/*
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
+}
+
+function ready() {
+    let overlays = Array.from(document.getElementsByClassName('overlay-text'));
+    
+       overlays.forEach(overlay => {
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('visible');
+              });
+    }); */
+
 function countDown(secs, elem){
     var clock = document.getElementById(elem);
     clock.innerHTML = "TIME "+secs;
    
      if(secs < 1) {
 		clearTimeout(timer);
-		element.innerHTML = "GAME OVER";
+        element.innerHTML = "GAME OVER";
+        //LINK WITH OVERLAYS??
 		
 	}
    
