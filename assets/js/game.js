@@ -91,6 +91,20 @@ function resetBoard(){
     });
 })();
 
+function countDown(secs,elem) {
+	var element = document.getElementById(elem);
+	element.innerHTML = secs;
+	if(secs < 1) {
+		clearTimeout(timer);
+		element.innerHTML = '<h2>Countdown Complete!</h2>';
+		element.innerHTML += '<a href="#">Click here now</a>';
+	}
+	secs--;
+	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+}
+
+countDown(10,"timer");
+
 /*"this" access the classlist of the "card", and then we toggle the flip class*/
 allCards.forEach(card => card.addEventListener("click", flipCard));
 /*loops through that list - into each one of the cards, we are going to attach an Eventlistener. When that event is fired, we are going to execute a functoin named flipCard*/
