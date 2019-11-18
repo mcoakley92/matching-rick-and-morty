@@ -88,6 +88,10 @@ body {
 
 }
 
+.game-board-text {
+     margin: auto;
+}
+
 .card {
     border: 2px solid black;
     width: calc(25% - 10px);
