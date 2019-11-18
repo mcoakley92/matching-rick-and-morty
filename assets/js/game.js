@@ -94,7 +94,14 @@ function resetBoard(){
 function countDown(secs, elem){
     var clock = document.getElementById(elem);
     clock.innerHTML = "TIME "+secs;
-   	secs--;
+   
+     if(secs < 1) {
+		clearTimeout(timer);
+		element.innerHTML = "GAME OVER";
+		
+	}
+   
+    secs--;
 	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
 
 }
