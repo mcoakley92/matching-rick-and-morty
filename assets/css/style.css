@@ -84,14 +84,9 @@ body {
     position: relative;
     margin: auto; /*centers vertically and horizontally*/
     display: flex; 
-        flex-wrap: wrap;
+     flex-wrap: wrap;
 
 }
-
-.game-board-text {
-     margin: auto;
-}
-
 
 .card {
     border: 2px solid black;
