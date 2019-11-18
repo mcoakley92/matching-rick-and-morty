@@ -14,7 +14,7 @@ body {
     
 }
 
-.overlay-home {
+.overlay-text {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -26,18 +26,21 @@ body {
     color: #39bdab;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.8);
+    font-size: 4em;
     }
 
-    .overlay-home.visable {
+    .overlay-text.visable {
         display: flex;
     }
 
+/*
     .overlay-button {
      background-color: rgba(0, 0, 0, 0.5);
      color: #39bdab;
      font-size: 4em;
      border: 2px, solid, #39bdab;
     }
+    */
 
 .game-board {
     width: 640px;
