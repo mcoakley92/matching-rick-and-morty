@@ -46,10 +46,13 @@ body {
     width: 640px;
     height: 640px;
     background-color: black;
+    text-align: center;
+    color: #39bdab;
+    position: relative;
     margin: auto; /*centers vertically and horizontally*/
     display: flex; 
-    flex-wrap: wrap;
-    /* DEFAULT flex =
+        flex-wrap: wrap;
+            /* DEFAULT flex =
     flex-item {
     flex: 1;
     }
@@ -72,10 +75,28 @@ body {
     perspective: 1000px; /*makes game container 3D*/
 }
 
+.game-board-container {
+    width: 640px;
+    height: 740px;
+    background-color: black;
+    text-align: center;
+    color: #39bdab;
+    position: relative;
+    margin: auto; /*centers vertically and horizontally*/
+    display: flex; 
+        flex-wrap: wrap;
+
+}
+
+.game-board-text {
+     margin: auto;
+}
+
+
 .card {
     border: 2px solid black;
     width: calc(25% - 10px);
-    height: calc(33.33% - 10px); /*allows us to take 10px(margin) off*/
+    height: calc(33.333% - 10px); /*allows us to take 10px(margin) off*/
     margin: 5px;
     z-index: 2;
     position: relative;
