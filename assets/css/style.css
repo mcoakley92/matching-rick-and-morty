@@ -29,7 +29,7 @@ body {
     font-size: 4em;
     }
 
-    .overlay-text.visable {
+    .overlay-text.visible {
         display: flex;
     }
 

@@ -1,3 +1,4 @@
+/*
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -5,18 +6,13 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    let overlays = document.getElementsByClassName('overlay-button');
+    let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     
        overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
               });
-    });
-
-    
-}
-
-
+    }); */
 
 const allCards = document.querySelectorAll(".card");
 /*makes list of all card elemets, stores it in const allCards*/
