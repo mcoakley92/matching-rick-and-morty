@@ -5,6 +5,13 @@ let hasCardFlipped = false;
 let lockBoard = false; //locks board until mismatching cards have been flipped back
 let firstClick, secondClick;
 
+function play(){
+    let overlay = document.getElementsByClassName("overlay-home");
+    overlay.addEventListener("click", function(){
+  overlay.classlist.remove("visable");
+});
+}
+
 function flipCard() {
     if (lockBoard) return;
     if (this === firstClick) return;
