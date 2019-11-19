@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "schwifty";
+    src: url("assets/fonts/schwifty.ttf") format("ttf")
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -88,10 +94,6 @@ body {
 
 }
 
-#timer {
-    font-size: 2em;
-    margin: auto;
-}
 .game-board-text {
      margin: auto;
 }
