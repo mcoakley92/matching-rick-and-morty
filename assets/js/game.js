@@ -127,6 +127,9 @@ const modalContent = `<div class="modal fade" id="superModal" tabindex="-1" role
 $( "#superModal" ).replaceWith(modalContent);
 
 function winnerModal(winner) {
+    const winnerText = "Winner";
+    const gameOvertext = "Game Over";
+    let myText = winner ? winnerText : gameOvertext;
     const newModal = `
 <div class="modal fade" id="superModal" tabindex="-1" role="dialog" aria-labelledby="superModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
