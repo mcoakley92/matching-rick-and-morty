@@ -127,7 +127,26 @@ const modalContent = `<div class="modal fade" id="superModal" tabindex="-1" role
 $( "#superModal" ).replaceWith(modalContent);
 
 function winnerModal(winner) {
-   
+    const newModal = `
+<div class="modal fade" id="superModal" tabindex="-1" role="dialog" aria-labelledby="superModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="superModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      ${myText}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Click to Restart</button>
+      </div>
+    </div>
+  </div>
+</div>`;
+      
 }
 
 winnerModal();
