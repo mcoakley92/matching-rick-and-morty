@@ -146,7 +146,8 @@ function winnerModal(winner) {
     </div>
   </div>
 </div>`;
-      
+ $("#superModal").replaceWith(newModal);
+ $("#superModal").modal("show");
 }
 
-winnerModal();
+winnerModal(true);
