@@ -25,13 +25,6 @@ function flipCard() {
     }
 }
 
-/*function checkForMatch() { //do cards match? - must check if the data-card from 1st&2nd card are same. If they are, we remove EventListener to prevent them being clicked again
-    //if its not, then we un-flip the cards back to original state
-
-   
-
-}*/ /*ALL OF THIS DOES SAME AS NEXT LINE! (ternary block)*/
-
 function checkForMatch(){
      if (firstClick.dataset.card ===
         secondClick.dataset.card) { //it's a match!
@@ -96,7 +89,7 @@ function countDown(secs, elem){
      if(secs < 1) {
 		clearTimeout(timer);
         element.innerHTML = "GAME OVER";
-        //LINK WITH OVERLAYS??
+        //LINK WITH MODALS??
 		
 	}
    
