@@ -124,3 +124,10 @@ const modalContent = `<div class="modal fade" id="superModal" tabindex="-1" role
 </div>
 </div>`
 
+$( "#superModal" ).replaceWith(modalContent);
+
+function winnerModal(winner) {
+   
+}
+
+winnerModal();
