@@ -91,11 +91,10 @@ function countDown(secs, elem){
     var clock = document.getElementById(elem);
     clock.innerHTML = "TIME "+secs;
    
-     if(secs < 1) {
+     if(secs <= 1) {
 		clearTimeout(timer);
-        element.innerHTML = "GAME OVER";
-        //LINK WITH MODALS??
-		
+       winnerModal(false);
+      		
 	}
    
     secs--;
@@ -158,4 +157,3 @@ function winnerModal(winner) {
  $("#superModal").modal("show");
 }
 
-winnerModal(false);
