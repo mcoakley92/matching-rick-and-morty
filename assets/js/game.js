@@ -102,7 +102,7 @@ function countDown(secs, elem){
 
 }
 
-countDown(10,"timer");
+countDown(60,"timer");
 
 /*"this" access the classlist of the "card", and then we toggle the flip class*/
 allCards.forEach(card => card.addEventListener("click", flipCard));
