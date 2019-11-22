@@ -4,7 +4,7 @@ const allCards = document.querySelectorAll(".card");
 let hasCardFlipped = false;
 let lockBoard = false; //locks board until mismatching cards have been flipped back
 let firstClick, secondClick;
-
+let matches = 0;
 
 
 function flipCard() {
@@ -29,6 +29,10 @@ function checkForMatch(){
      if (firstClick.dataset.card ===
         secondClick.dataset.card) { //it's a match!
         disableCards();
+        matches += 1
+        if (matches == 6){
+            winnerModal(true)
+        }
     }
     else { //not a match
         unflipCards();
@@ -153,4 +157,3 @@ function winnerModal(winner) {
  $("#superModal").modal("show");
 }
 
-winnerModal(true);
