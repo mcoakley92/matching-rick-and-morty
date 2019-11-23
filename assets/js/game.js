@@ -78,7 +78,7 @@ function countDown(secs, elem){
     clock.innerHTML = "TIME "+secs;
    
      if(secs == 1) {
-		clearTimeout(timer);
+		clearInterval(countDown);
        winnerModal(false);
       		
 	}
@@ -142,3 +142,8 @@ function winnerModal(winner) {
  $("#superModal").modal("show");
 }
 
+function restart(){
+    
+}
+
+$(".btn").onClick(restart());
