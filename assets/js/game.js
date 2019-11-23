@@ -91,18 +91,20 @@ function countDown(secs, elem){
     var clock = document.getElementById(elem);
     clock.innerHTML = "TIME "+secs;
    
-     if(secs <= 1) {
+     if(secs == 1) {
 		clearTimeout(timer);
        winnerModal(false);
       		
 	}
-   
+   else{
+
+   }
     secs--;
 	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
 
 }
 
-countDown(60,"timer");
+countDown(10,"timer");
 
 /*"this" access the classlist of the "card", and then we toggle the flip class*/
 allCards.forEach(card => card.addEventListener("click", flipCard));
