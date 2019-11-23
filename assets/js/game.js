@@ -89,7 +89,7 @@ function countDown(secs, elem){
 	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
 }
 
-countDown(10,"timer");
+countDown(60,"timer");
 
 //this" access the classlist of the "card", and then we toggle the flip class
 allCards.forEach(card => card.addEventListener("click", flipCard));
@@ -130,7 +130,7 @@ function winnerModal(winner) {
             </div>
       <div class="modal-body">
       ${myText}
-      <button type="button" class="btn btn-secondary">Click to Restart</button>
+      <button type="button submit" onClick="refreshPage()" class="btn btn-secondary">Click to Restart</button>
       </div>
       <div class="modal-footer">
         
@@ -142,8 +142,8 @@ function winnerModal(winner) {
  $("#superModal").modal("show");
 }
 
-function restart(){
+function refreshPage(){
+    window.location.reload();
+} 
 
-}
 
-$(".btn").onClick(restart());
