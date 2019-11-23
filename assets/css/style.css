@@ -37,10 +37,18 @@ body {
    text-align: center;
     }
 
-.modal-footer {
-align-items: center;
-    }
+.modal-body {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
+.btn {
+    background-color: #39bdab;
+    color: black;
+    margin-top: 50px;
+}
     .overlay-text.visible {
         display: flex;
     }
