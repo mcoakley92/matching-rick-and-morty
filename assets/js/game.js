@@ -89,7 +89,7 @@ function countDown(secs, elem){
 	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
 }
 
-countDown(10,"timer");
+countDown(60,"timer");
 
 //this" access the classlist of the "card", and then we toggle the flip class
 allCards.forEach(card => card.addEventListener("click", flipCard));
@@ -143,7 +143,7 @@ function winnerModal(winner) {
 }
 
 function restart(){
-    
+document.location.href();
 }
 
 $(".btn").onClick(restart());

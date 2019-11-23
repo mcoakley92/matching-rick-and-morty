@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
-
 @font-face {
     font-family: "schwifty";
     src: url("assets/fonts/schwifty.ttf") format("ttf")
@@ -9,10 +7,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* keeps original size */
-}
+    box-sizing: border-box; 
 
-/* resets all items */
 
 body {
     height: 100vh;
@@ -49,18 +45,7 @@ body {
     color: black;
     margin-top: 50px;
 }
-    .overlay-text.visible {
-        display: flex;
-    }
-
-/*
-    .overlay-button {
-     background-color: rgba(0, 0, 0, 0.5);
-     color: #39bdab;
-     font-size: 4em;
-     border: 2px, solid, #39bdab;
-    }
-    */
+     
 
 .game-board {
     width: 640px;
@@ -69,28 +54,10 @@ body {
     text-align: center;
     color: #39bdab;
     position: relative;
-    margin: auto; /*centers vertically and horizontally*/
+    margin: auto; 
     display: flex; 
     flex-wrap: wrap;
-            /* DEFAULT flex =
-    flex-item {
-    flex: 1;
-    }
-    flex-container {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-    WHICH MEANS!
-    1. items - each one takes up same amount of space on the screen
-    2. container - your items should be layed out in a row
-    3. just one row
-    4. positioned from left to right
-    5. stretched out across the containers height
-    BUT!!
-    when styling width and height in .card, height changes but width does not - due to "nowrap", which prevents items being layed out across multipe rows. So we overwrite this
-    */
+  
     border: 2px solid black;
     perspective: 1000px; /*makes game container 3D*/
 }
@@ -102,7 +69,7 @@ body {
     text-align: center;
     color: #39bdab;
     position: relative;
-    margin: auto; /*centers vertically and horizontally*/
+    margin: auto; 
     display: flex; 
     flex-wrap: wrap;
 
@@ -120,13 +87,13 @@ body {
 .card {
     border: 2px solid black;
     width: calc(25% - 10px);
-    height: calc(33.333% - 10px); /*allows us to take 10px(margin) off*/
+    height: calc(33.333% - 10px); 
     margin: 5px;
     z-index: 2;
     position: relative;
-    transform: scale(1); /* starting point for transform: scale (.97)*/
+    transform: scale(1); 
     transform-style: preserve-3d; /*inserts card into the 3D space in the game board*/
-    transition: transform .5s; /*time allows you to observe 3D effect?*/
+    transition: transform .5s; 
 }
 
 .card:active {
@@ -149,7 +116,7 @@ body {
 }
 
 .card-front{
-    transform: rotateY(180deg);/*flips front back around, after first flip and hiding back visability*/
+    transform: rotateY(180deg);
     border: black;
 } 
 
