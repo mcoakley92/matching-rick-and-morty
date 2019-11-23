@@ -1,13 +1,10 @@
-@font-face {
-    font-family: "schwifty";
-    src: url("assets/fonts/schwifty.ttf") format("ttf")
-}
-
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* keeps original size */
+}
 
 
 body {
@@ -45,7 +42,9 @@ body {
     color: black;
     margin-top: 50px;
 }
-     
+    .overlay-text.visible {
+        display: flex;
+    }
 
 .game-board {
     width: 640px;
@@ -57,7 +56,6 @@ body {
     margin: auto; 
     display: flex; 
     flex-wrap: wrap;
-  
     border: 2px solid black;
     perspective: 1000px; /*makes game container 3D*/
 }
