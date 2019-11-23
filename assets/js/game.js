@@ -1,5 +1,5 @@
 const allCards = document.querySelectorAll(".card");
-/*makes list of all card elemets, stores it in const allCards*/
+//makes list of all card elemets, stores it in const allCards
 
 let hasCardFlipped = false;
 let lockBoard = false; //locks board until mismatching cards have been flipped back
@@ -11,11 +11,11 @@ function flipCard() {
     if (lockBoard) return;
     if (this === firstClick) return;
     
-    this.classList.add("flip"); /*changed toggle to add so we can add a condition*/
+    this.classList.add("flip"); //changed toggle to add so we can add a condition
     if (!hasCardFlipped) {
-        /*first click*/
+        //first click
         hasCardFlipped = true;
-        firstClick = this; /*this was checked using console.log(hasCardFlipped, firstClick)*/
+        firstClick = this; //this was checked using console.log(hasCardFlipped, firstClick)
     }
     else {
         hasCardFlipped = false;
@@ -71,21 +71,7 @@ function resetBoard(){
 })();
 
 
-/*
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready();
-}
 
-function ready() {
-    let overlays = Array.from(document.getElementsByClassName('overlay-text'));
-    
-       overlays.forEach(overlay => {
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('visible');
-              });
-    }); */
 
 function countDown(secs, elem){
     var clock = document.getElementById(elem);
@@ -101,12 +87,11 @@ function countDown(secs, elem){
    }
     secs--;
 	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
-
 }
 
 countDown(10,"timer");
 
-/*"this" access the classlist of the "card", and then we toggle the flip class*/
+//this" access the classlist of the "card", and then we toggle the flip class
 allCards.forEach(card => card.addEventListener("click", flipCard));
 /*loops through that list - into each one of the cards, we are going to attach an Eventlistener. When that event is fired, we are going to execute a functoin named flipCard*/
 
