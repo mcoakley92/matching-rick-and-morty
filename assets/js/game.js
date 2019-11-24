@@ -78,15 +78,14 @@ function countDown(secs, elem){
     clock.innerHTML = "TIME "+secs;
    
      if(secs == 1) {
-		clearTimeout(countDown);
-       winnerModal(false);
-      		
+        winnerModal(false);
+      	 clearTimeout(countDown);	
 	}
    else{
-
+    
    }
     secs--;
-	let timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+	setTimeout('countDown('+secs+',"'+elem+'")',1000);
 }
 
 countDown(10,"timer");
