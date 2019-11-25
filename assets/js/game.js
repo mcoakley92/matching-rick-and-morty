@@ -82,10 +82,10 @@ function countDown(secs, elem){
       	 clearTimeout(countDown);	
 	}
    else{
-    
-   }
-    secs--;
+     secs--;
 	setTimeout('countDown('+secs+',"'+elem+'")',1000);
+   }
+   
 }
 
 countDown(10,"timer");
