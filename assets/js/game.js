@@ -30,10 +30,7 @@ function checkForMatch(){
         secondClick.dataset.card) { //it's a match!
         disableCards();
         matches += 1;
-        if (matches == 6){
-            winnerModal(true);
-        }
-
+       
     }
     else { //not a match
         unflipCards();
@@ -80,7 +77,12 @@ function countDown(secs, elem){
      if(secs == 1) {
         winnerModal(false);
       	 clearTimeout(countDown);	
-	}
+    }
+     if (matches == 6){
+            clearTimeout(countDown);
+            winnerModal(true);
+                    }
+
    else{
      secs--;
 	setTimeout('countDown('+secs+',"'+elem+'")',1000);
@@ -88,7 +90,7 @@ function countDown(secs, elem){
    
 }
 
-countDown(10,"timer");
+countDown(60,"timer");
 
 //this" access the classlist of the "card", and then we toggle the flip class
 allCards.forEach(card => card.addEventListener("click", flipCard));
