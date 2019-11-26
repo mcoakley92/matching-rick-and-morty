@@ -121,8 +121,8 @@ const modalContent = `<div class="modal fade" id="superModal" tabindex="-1" role
 $( "#superModal" ).replaceWith(modalContent);
 
 function winnerModal(winner) {
-    const winnerText = "Winner";
-    const gameOvertext = "Game Over";
+    const winnerText = "WINNER!";
+    const gameOvertext = "GAME OVER!";
     let myText = winner ? winnerText : gameOvertext;
     const newModal = `
 <div class="modal fade" id="superModal" tabindex="-1" role="dialog" aria-labelledby="superModalLabel" aria-hidden="true">
@@ -132,7 +132,7 @@ function winnerModal(winner) {
         <h2 class="modal-title" id="superModalLabel">Matching Rick and Morty</h2>
             </div>
       <div class="modal-body">
-      ${myText}
+      <div class="modal-text">${myText}</div>
       <button type="button submit" onClick="refreshPage()" class="btn btn-secondary">Click to Restart</button>
       </div>
       <div class="modal-footer">

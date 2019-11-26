@@ -37,10 +37,13 @@ body {
     margin-bottom: 50px;
 }
 
+.modal-text {
+    margin: auto;
+}
 .btn {
     background-color: #39bdab;
     color: black;
-    margin-top: 50px;
+    margin: auto;
 }
   
 .game-board {
