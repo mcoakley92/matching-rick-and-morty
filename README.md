@@ -19,7 +19,8 @@ will stay facing up. If not, they will face back down.
 * If the user runs out of time, the want to know they have lost. A "Game Over" modal will notify them of this. 
 * Should the player want to play again, there is a restart button wich allows them to start again with a new timer. 
 
- 
+![wireframe](../1-cards-start-down.png)
+
 ## Features
 
 ### Existing Features
@@ -53,8 +54,18 @@ The project uses Bootstrap for simple design, and for modals and buttons
 
 ## Testing
 
+I played the game several times winning and losing to make sure all features worked correctly.
+I also had friends and family play the game and got their feedback.
+I wanted to make sure that the cards flipped and matching cards stayed facing up. Modals should pop up at the 
+correct times - when all cards are matched or the timer run out. Restart buttons should refresh the page and the timer 
+should start from 45 seconds again. 
+All of these features worked while testing the game.
+
+I tested the game on laptop, iPad and mobile. 
+
 ## Deployment
 
+The website is deployed through [github](https://github.com/)
 ## Credits
 
 ### Media

@@ -11,11 +11,11 @@ function flipCard() {
     if (lockBoard) return;
     if (this === firstClick) return;
     
-    this.classList.add("flip"); //changed toggle to add so we can add a condition
+    this.classList.add("flip"); 
     if (!hasCardFlipped) {
         //first click
         hasCardFlipped = true;
-        firstClick = this; //this was checked using console.log(hasCardFlipped, firstClick)
+        firstClick = this; 
     }
     else {
         hasCardFlipped = false;
@@ -30,6 +30,7 @@ function checkForMatch(){
         secondClick.dataset.card) { //it's a match!
         disableCards();
         matches += 1;
+         
        
     }
     else { //not a match
@@ -74,25 +75,26 @@ function countDown(secs, elem){
     let clock = document.getElementById(elem);
     clock.innerHTML = "TIME "+secs;
    
-     if(secs == 1) {
+        if(secs == 1) {
+        clearTimeout(countDown);
         winnerModal(false);
-      	 clearTimeout(countDown);	
-    }
-     if (matches == 6){
+      	 	
+    }   
+      if (matches == 6){
             clearTimeout(countDown);
             winnerModal(true);
                     }
-
+     
    else{
      secs--;
 	setTimeout('countDown('+secs+',"'+elem+'")',1000);
    }
-   
+  
 }
 
-countDown(60,"timer");
+countDown(45,"timer");
 
-//this" access the classlist of the "card", and then we toggle the flip class
+
 allCards.forEach(card => card.addEventListener("click", flipCard));
 /*loops through that list - into each one of the cards, we are going to attach an Eventlistener. When that event is fired, we are going to execute a functoin named flipCard*/
 
