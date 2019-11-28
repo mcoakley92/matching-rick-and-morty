@@ -142,7 +142,11 @@ function winnerModal(winner) {
   </div>
 </div>`;
  $("#superModal").replaceWith(newModal);
- $("#superModal").modal("show");
+ $("#superModal").modal({
+	keyboard: false,
+	backdrop: "static",
+	show: true
+  });
 }
 
 function refreshPage(){
