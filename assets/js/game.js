@@ -75,10 +75,10 @@ function countDown(secs, elem){
     let clock = document.getElementById(elem);
     clock.innerHTML = "TIME "+secs;
    
-        if(secs == 1) {
+        if(secs == 0) {
         clearTimeout(countDown);
         winnerModal(false);
-      	 	
+      	return clock.innerHTML = "TIME 0";	
     }   
       if (matches == 6){
             clearTimeout(countDown);
@@ -92,7 +92,7 @@ function countDown(secs, elem){
   
 }
 
-countDown(45,"timer");
+countDown(10,"timer");
 
 
 allCards.forEach(card => card.addEventListener("click", flipCard));
