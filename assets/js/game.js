@@ -173,6 +173,9 @@ function winnerModal(winner) {
   });
 }
 
+/**
+ * This refreshes the game, to start from beginning again
+ */
 function refreshPage(){
     window.location.reload();
 } 
