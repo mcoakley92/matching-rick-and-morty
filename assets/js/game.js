@@ -67,7 +67,9 @@ function unflipCards() {
         }, 1500);
 }
 
-
+/**
+ * This will reset the board
+ */
 function resetBoard(){
     [hasCardFlipped, lockBoard] = [false, false]; //ES6 destructing assignment
     [firstClick, secondClick] = [null, null];
