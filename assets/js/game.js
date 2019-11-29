@@ -25,6 +25,10 @@ function flipCard() {
     }
 }
 
+/**
+ * Checks if first clicked card matches the second clicked card,
+ * and adds 1 to "matches" variable if it is
+ */
 function checkForMatch(){
      if (firstClick.dataset.card ===
         secondClick.dataset.card) { //it's a match!
@@ -55,6 +59,7 @@ function unflipCards() {
             resetBoard();
         }, 1500);
 }
+
 
 function resetBoard(){
     [hasCardFlipped, lockBoard] = [false, false]; //ES6 destructing assignment
