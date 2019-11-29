@@ -42,12 +42,15 @@ function checkForMatch(){
     }
 }
 
+/**
+ * 
+ 
 function disableCards() {
     firstClick.removeEventListener("click", flipCard);
     secondClick.removeEventListener("click", flipCard);
 
 resetBoard();
-}
+}*/
 
 function unflipCards() {
     lockBoard = true;
