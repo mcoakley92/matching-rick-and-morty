@@ -43,15 +43,19 @@ function checkForMatch(){
 }
 
 /**
- * 
- 
-function disableCards() {
+ * Disables matched cards by removing "click" event listener
+ * and flipCard function, so they can't be clicked again
+ */
+ function disableCards() {
     firstClick.removeEventListener("click", flipCard);
     secondClick.removeEventListener("click", flipCard);
 
 resetBoard();
-}*/
+}
 
+/**
+ * Flips unmatched card back around
+ */
 function unflipCards() {
     lockBoard = true;
     
