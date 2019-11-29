@@ -74,7 +74,10 @@ function resetBoard(){
     [hasCardFlipped, lockBoard] = [false, false]; //ES6 destructing assignment
     [firstClick, secondClick] = [null, null];
 }
-    
+ 
+/**
+ * This shuffles all cards on the board
+ */
 (function shuffle() {
     allCards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 12);
