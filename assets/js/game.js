@@ -6,7 +6,9 @@ let lockBoard = false; //locks board until mismatching cards have been flipped b
 let firstClick, secondClick;
 let matches = 0;
 
-
+/**
+ * This allows cards to be flipped over when they are clicked
+ */
 function flipCard() {
     if (lockBoard) return;
     if (this === firstClick) return;
