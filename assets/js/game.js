@@ -94,9 +94,12 @@ function countDown(secs, elem){
 
 countDown(10,"timer");
 
-
+/**
+ * loops through that list - into each one of the cards,
+ *  we are going to attach an Eventlistener. When that event is fired,
+ *  we are going to execute a functoin named flipCard
+ */
 allCards.forEach(card => card.addEventListener("click", flipCard));
-/*loops through that list - into each one of the cards, we are going to attach an Eventlistener. When that event is fired, we are going to execute a functoin named flipCard*/
 
 const modalContent = `<div class="modal fade" id="superModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"aria-hidden="true">
 <div class="modal-dialog" role="document">
