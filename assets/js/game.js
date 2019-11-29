@@ -85,9 +85,13 @@ function resetBoard(){
     });
 })();
 
-
-
-
+/**
+ * This will decrease the timer and count down.
+ * If the number of matches equals 6 it will stop, or if it hits 0 seconds left.
+ * The relevant modal will then pop up
+ * @param {number} secs 
+ * @param {string} elem 
+ */
 function countDown(secs, elem){
     let clock = document.getElementById(elem);
     clock.innerHTML = "TIME "+secs;
