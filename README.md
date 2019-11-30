@@ -24,7 +24,9 @@ All wireframes can be found in the [wireframes folder](https://github.com/mcoakl
 ## Features
 
 ### Existing Features
-* The game currently features 12 clickable cards
+* The game currently features 12 clickable cards. (Noted the original wireframe has 10 cards)
+
+![wireframe](https://raw.githubusercontent.com/mcoakley92/matching-rick-and-morty/master/wireframes/2-unmatched-pair.png)
 * It uses Bootstrap modals which pop up when the game has ended. Bootstrap buttons are used to restart the game
 * It has a timer which informs player how much time they have left to win the game
 
