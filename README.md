@@ -29,6 +29,7 @@ All wireframes can be found in the [wireframes folder](https://github.com/mcoakl
 ![wireframe](https://raw.githubusercontent.com/mcoakley92/matching-rick-and-morty/master/wireframes/2-unmatched-pair.png)
 
 * It uses Bootstrap modals which pop up when the game has ended. Bootstrap buttons are used to restart the game
+
 ![winner wireframe](https://raw.githubusercontent.com/mcoakley92/matching-rick-and-morty/master/wireframes/5-winner.png)
 
 * It has a timer which informs player how much time they have left to win the game
@@ -36,24 +37,26 @@ All wireframes can be found in the [wireframes folder](https://github.com/mcoakl
 ### Features left to implement
 * More levels can be added in the future. This could be in the form of more cards and the same amount of time, or the 
 same amount of cards with less time, or both. 
-* The game could also have a counter to see how many clicks were used in the gamee
+* The game could also have a counter to see how many clicks were used to complete the game 
 
 
 ## Technologies Used
-
-* [JQuery](LINK)
-
-The project uses JQuery for DOM Manipulation
-
-* [Bootstrap 4](LINK)
-
-The project uses Bootstrap for simple design, and for modals and buttons
 
 * HTML
 
 * CSS
 
 * Javascript
+
+* [JQuery](LINK)
+
+    * The project uses JQuery for DOM Manipulation
+
+* [Bootstrap 4](LINK)
+
+    * The project uses Bootstrap for simple design, and for modals and buttons
+
+
 
 
 
