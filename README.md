@@ -102,16 +102,13 @@ $("#superModal").modal({
 	show: true
 ```
 
+3. A full screen, clickable overlay was going to be used to start and restart the game initially. 
+* This was difficult to access and render
+- The Bootstrap modal with button provided and easier way to overcome this
 
+4. The game was tested on laptop, iPad and mobile. 
+* The game works and scales well on all devices. However in landscape mode for mobile, the player may have to do a little scrolling to access all cards
 
-
-
-I wanted to make sure that the cards flipped and matching cards stayed facing up. Modals should pop up at the 
-correct times - when all cards are matched or the timer run out. Restart buttons should refresh the page and the timer 
-should start from 45 seconds again. 
-All of these features worked while testing the game.
-
-I tested the game on laptop, iPad and mobile. 
 
 ## Deployment
 
