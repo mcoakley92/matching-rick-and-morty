@@ -162,7 +162,7 @@ Images for the cards were found at the following locations:
 * [Card back](https://www.trendsinternational.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/15460_rick-and-morty_portal_4x6.jpg)
 
 ## Acknowlegements
-A special thanks to my Code Institute mentor Simen Daehlin for his time, patience and motivation throughout this project.
+A special thanks to my Code Institute mentor [Simen Daehlin](https://www.linkedin.com/in/simendaehlin/?originalSubdomain=uk) for his time, patience and motivation throughout this project.
 
 I would also like to thank the online Code Institute tutoring team.
 
