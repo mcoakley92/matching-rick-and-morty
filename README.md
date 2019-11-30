@@ -62,7 +62,33 @@ same amount of cards with less time, or both.
 
 ## Testing
 
-I played the game several times winning and losing to make sure all features worked correctly.
+I played the game several times, winning and losing to see if all features worked correctly. 
+
+
+* I noticed that when the player either won or lost the game, the timer stayed going into the negative in the background.
+    - I managed to fix this for the when the game is won by creating the "matches" variable.
+
+```
+if (matches == 6){
+            clearTimeout(countDown);
+            winnerModal(true);
+                    }
+  ```                  
+                                       
+   * However, despite also calling `clearTimeout(countDown)` when the timer got to 0, its still went into negative 
+    figures in the background. To overcome this, the code now returns a string of "TIME 0" in place of "TIME "+secs.
+
+ ```   
+    function countDown(secs, elem){
+    let clock = document.getElementById(elem);
+    clock.innerHTML = "TIME "+secs;
+   
+        if(secs == 0) {
+        clearTimeout(countDown);
+        winnerModal(false);
+      	return clock.innerHTML = "TIME 0";
+  ```      
+
 I also had friends and family play the game and got their feedback.
 I wanted to make sure that the cards flipped and matching cards stayed facing up. Modals should pop up at the 
 correct times - when all cards are matched or the timer run out. Restart buttons should refresh the page and the timer 
