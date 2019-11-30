@@ -143,24 +143,26 @@ To clone this project from GitHub;
 ## Credits
 
 ### Media
+The background image for the game was found at:
 
-Images for the cards and background were taken from the following sources:
+* [Background Image](https://nebula.wsimg.com/a1cc1c259eeae5a37cb70f0ab3b46217?AccessKeyId=0FDC079973B83A5D980E&disposition=0&alloworigin=1)
 
-[Rick](https://i.pinimg.com/originals/7b/aa/25/7baa252dbdfeed669c152bedd2fa5feb.jpg)
+Images for the cards were found at the following locations:
 
-[Morty](https://store.playstation.com/en-us/product/UP0151-CUSA09971_00-AV00000000000002)
+* [Rick](https://i.pinimg.com/originals/7b/aa/25/7baa252dbdfeed669c152bedd2fa5feb.jpg)
 
-[Meeseek](https://steemitimages.com/DQmfHedFJStzXRDC2R5fnWrAiYJqWaknPaYTfeQWQe8Boxh/flat%2C800x800%2C075%2Cf.u1.jpg)
+* [Morty](https://store.playstation.com/en-us/product/UP0151-CUSA09971_00-AV00000000000002)
 
-[Jerry](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjBhOOHx4PmAhU0oXEKHWeED9EQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.teepublic.com%2Ft-shirt%2F299958-rick-and-morty-jerry&psig=AOvVaw0Ha_iFQax3JMcDDtsVGpBy&ust=1574709200132690)
+* [Meeseek](https://steemitimages.com/DQmfHedFJStzXRDC2R5fnWrAiYJqWaknPaYTfeQWQe8Boxh/flat%2C800x800%2C075%2Cf.u1.jpg)
 
-[Rick and Morty](https://ya-webdesign.com/download.html)
+* [Jerry](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjBhOOHx4PmAhU0oXEKHWeED9EQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.teepublic.com%2Ft-shirt%2F299958-rick-and-morty-jerry&psig=AOvVaw0Ha_iFQax3JMcDDtsVGpBy&ust=1574709200132690)
 
-[Snuffles](https://lh3.googleusercontent.com/XM8nvs1UZSOFf4ICTRDN7zmw9RtfN2gT8JoxSbKzrxoOutDd2R1kQX9CVy6qsfHNyDyM=s85)
+* [Rick and Morty](https://ya-webdesign.com/download.html)
 
-[Card back](https://www.trendsinternational.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/15460_rick-and-morty_portal_4x6.jpg)
+* [Snuffles](https://lh3.googleusercontent.com/XM8nvs1UZSOFf4ICTRDN7zmw9RtfN2gT8JoxSbKzrxoOutDd2R1kQX9CVy6qsfHNyDyM=s85)
+
+* [Card back](https://www.trendsinternational.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/15460_rick-and-morty_portal_4x6.jpg)
 
 
-[Background](https://nebula.wsimg.com/a1cc1c259eeae5a37cb70f0ab3b46217?AccessKeyId=0FDC079973B83A5D980E&disposition=0&alloworigin=1)
 
 ## Acknowlegements
