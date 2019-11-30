@@ -7,14 +7,11 @@ to flip over. If the cards are the same, they stay facing up. If they do not mat
 over for the player to try again. The player wins when each pair has been found, in the time allowed. 
 
 ## UX 
-* The user wants to be able to click on a card in order to start the game. 
-* Clicking on a card should allow the user to flip it over.
-* When two cards have been flipped, the user wants to know if they are a match or not - if they are a match, they 
-will stay facing up. If not, they will face back down. 
-* If the user has selected two mismatching cards, they will not be able to click on another card until the two mismatching ones have faced back down again.
-* If all cards have been matched within the time give, the user wants to know they have won. A pop up modal will let the user know they are the winner
-* If the user runs out of time, the want to know they have lost. A "Game Over" modal will notify them of this. 
-* Should the player want to play again, there is a restart button wich allows them to start again with a new timer. 
+
+This game is for Rick and Morty, and classic card game fans. The game aims to be both mentally stimulating, and entertaining to play.
+
+1. As a player, I want to be able to click on a card in order to flip it over 
+
 
 ![wireframe](../1-cards-start-down.png)
 
