@@ -53,7 +53,7 @@ All wireframes can be found in the [wireframes folder](https://github.com/mcoakl
 
     * The project uses JQuery for DOM Manipulation
 
-* [Bootstrap 4](LINK)
+* [Bootstrap](LINK)
 
     * The project uses Bootstrap for simple design, and for modals and buttons
 
@@ -132,7 +132,7 @@ To clone this project from GitHub;
 1. Open the [GitHub repository](https://github.com/mcoakley92/matching-rick-and-morty)
 2. Click on the green dropdown button, **Clone or download**
 3. In the **Clone with HTTPs** section, copy the link in the bar
-4. In your local IDE open Git Bash
+4. In your local IDE open your preferred terminal
 5. Change the current working directory to the location where you want the cloned directory to be made
 6. Type git clone, and then paste in the copied link
 7. Press Enter. Your local clone will be created.
