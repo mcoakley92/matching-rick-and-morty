@@ -11,7 +11,8 @@ over for the player to try again. The player wins when each pair has been found,
 This game is for Rick and Morty, and classic card game fans. The game aims to be both mentally stimulating, and entertaining to play.
 
 1. As a player, I want to be able to click on a card in order to flip it over 
-2. As a player, I want matched cards to stay faming up and unmatched cards to flip back again, so I know which cards I still need to match
+2. As a player, I want a timer so I know how much time I have left to complete the game
+3. As a player, I want matched cards to stay faming up and unmatched cards to flip back again, so I know which cards I still need to match
 
 ![wireframe](../1-cards-start-down.png)
 
