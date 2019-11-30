@@ -12,7 +12,8 @@ This game is for Rick and Morty, and classic card game fans. The game aims to be
 
 1. As a player, I want to be able to click on a card in order to flip it over 
 2. As a player, I want a timer so I know how much time I have left to complete the game
-3. As a player, I want matched cards to stay faming up and unmatched cards to flip back again, so I know which cards I still need to match
+3. As a player, I want matched cards to stay facing up and unmatched cards to flip back again, so I know which cards I have left to match
+4. As a player, I want a pop up notification to inform me when I have won or lost the game
 
 ![wireframe](../1-cards-start-down.png)
 
