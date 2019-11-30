@@ -66,7 +66,7 @@ same amount of cards with less time, or both.
 
 
 * I noticed that when the player either won or lost the game, the timer stayed going into the negative in the background.
-    - I managed to fix this for the when the game is won by creating the "matches" variable.
+    - This was fixed for the when the game is won by creating the "matches" variable.
 
 ```
 if (matches == 6){
