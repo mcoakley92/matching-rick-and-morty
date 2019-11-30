@@ -62,7 +62,7 @@ same amount of cards with less time, or both.
 
 ## Testing
 
-I played the game several times, winning and losing to see if all features worked correctly. 
+1. I played the game several times, winning and losing to see if all features worked correctly. 
 
 
 * I noticed that when the player either won or lost the game, the timer stayed going into the negative in the background.
@@ -89,7 +89,23 @@ if (matches == 6){
       	return clock.innerHTML = "TIME 0";
   ```      
 
-I also had friends and family play the game and got their feedback.
+2. I also had friends and family play the game and got their feedback.
+* They noticed that when the "GAME OVER" modal popped up, if you exit it without clicking the restart button, you 
+could go back into the game and continue clicking cards until you win. 
+
+- Properties were aded to the modal to make it so the only way to exit the modal and restart the game would be to click on the "Click to Restart" button
+
+```
+$("#superModal").modal({
+	keyboard: false,
+	backdrop: "static",
+	show: true
+```
+
+
+
+
+
 I wanted to make sure that the cards flipped and matching cards stayed facing up. Modals should pop up at the 
 correct times - when all cards are matched or the timer run out. Restart buttons should refresh the page and the timer 
 should start from 45 seconds again. 
