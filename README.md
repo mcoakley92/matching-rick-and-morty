@@ -126,6 +126,18 @@ To deploy Matching Rick and Morty from its [GitHub repository](https://github.co
 3. Under "Source" click the drop-down menu, and select "Master Branch"
 4. The page is refreshed, and the page is now deployed
 5. To retrieve the link to the deployed website, scroll back down to "GitHub Pages"
+
+### How to run this project locally
+
+To clone this project from GitHub;
+
+1. Open the [GitHub repository](https://github.com/mcoakley92/matching-rick-and-morty)
+2. Click on the green dropdown button, "Clone or download"
+3. In the "Clone with HTTPs" section, copy the link in the bar
+4. In your local IDE open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made
+6. Type git clone, and then paste in the copied link
+7. Press Enter. Your local clone will be created.
     
 
 ## Credits
