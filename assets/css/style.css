@@ -19,7 +19,7 @@ body {
     height: 740px;
     width: 640px;
     margin: auto;
-    background-color: black;
+    background-color:#000;
     color: #39bdab;
     font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
@@ -42,28 +42,28 @@ body {
 }
 .btn {
     background-color: #39bdab;
-    color: black;
+    color: #000;
     margin: auto;
 }
   
 .game-board {
     width: 640px;
     height: 640px;
-    background-color: black;
+    background-color: #000;
     text-align: center;
     color: #39bdab;
     position: relative;
     margin: auto; 
     display: flex; 
     flex-wrap: wrap;
-    border: 2px solid black;
+    border: 2px solid #000;
     perspective: 1000px; /*makes game container 3D*/
 }
 
 .game-board-container {
     width: 640px;
     height: 740px;
-    background-color: black;
+    background-color: #000;
     text-align: center;
     color: #39bdab;
     position: relative;
@@ -83,7 +83,7 @@ body {
 }
 
 .card {
-    border: 2px solid black;
+    border: 2px solid #212121;
     width: calc(25% - 10px);
     height: calc(33.333% - 10px); 
     margin: 5px;
@@ -115,6 +115,6 @@ body {
 
 .card-front{
     transform: rotateY(180deg);
-    border: black;
+    border: #000;
 } 
 
