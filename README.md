@@ -17,7 +17,9 @@ This game is for Rick and Morty, and classic card game fans. The game aims to be
 5. As a player, I want to have a replay button, so I can try again each time I win or lose
 
 
-![wireframe](../1-cards-start-down.png)
+### Wireframes
+
+All wireframes can be found in the [wireframes folder](https://github.com/mcoakley92/matching-rick-and-morty/tree/master/wireframes) of the repository 
 
 ## Features
 
