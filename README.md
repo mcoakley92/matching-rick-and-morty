@@ -14,6 +14,8 @@ This game is for Rick and Morty, and classic card game fans. The game aims to be
 2. As a player, I want a timer so I know how much time I have left to complete the game
 3. As a player, I want matched cards to stay facing up and unmatched cards to flip back again, so I know which cards I have left to match
 4. As a player, I want a pop up notification to inform me when I have won or lost the game
+5. As a player, I want to have a replay button, so I can try again each time I win or lose
+
 
 ![wireframe](../1-cards-start-down.png)
 
