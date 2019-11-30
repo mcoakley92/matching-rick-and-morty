@@ -89,11 +89,12 @@ if (matches == 6){
       	return clock.innerHTML = "TIME 0";
   ```      
 
+
 2. I also had friends and family play the game and got their feedback.
 * They noticed that when the "GAME OVER" modal popped up, if you exit it without clicking the restart button, you 
 could go back into the game and continue clicking cards until you win. 
 
-- Properties were aded to the modal to make it so the only way to exit the modal and restart the game would be to click on the "Click to Restart" button
+    - Properties were aded to the modal to make it so the only way to exit the modal and restart the game would be to click on the "Click to Restart" button
 
 ```
 $("#superModal").modal({
@@ -102,9 +103,11 @@ $("#superModal").modal({
 	show: true
 ```
 
+
 3. A full screen, clickable overlay was going to be used to start and restart the game initially. 
 * This was difficult to access and render
-- The Bootstrap modal with button provided and easier way to overcome this
+    - The Bootstrap modal with button provided and easier way to overcome this
+
 
 4. The game was tested on laptop, iPad and mobile. 
 * The game works and scales well on all devices. However in landscape mode for mobile, the player may have to do a little scrolling to access all cards
@@ -112,7 +115,19 @@ $("#superModal").modal({
 
 ## Deployment
 
-The website is deployed through [github](https://github.com/)
+This game was created with [AWS C9](https://aws.amazon.com/cloud9/?origin=c9io) and [Gitpod](https://www.gitpod.io/).
+Files were originally commited and pushed to GitHub through C9, but after encountering some problems, the repository was then cloned
+to Gitpod so the game could be finished there. 
+
+To deploy Matching Rick and Morty from its [GitHub repository](https://github.com/mcoakley92/matching-rick-and-morty);
+
+1. Click "Settings" in the menu bar
+2. Scroll down to "GitHub pages"
+3. Under "Source" click the drop-down menu, and select "Master Branch"
+4. The page is refreshed, and the page is now deployed
+5. To retrieve the link to the deployed website, scroll back down to "GitHub Pages"
+    
+
 ## Credits
 
 ### Media
