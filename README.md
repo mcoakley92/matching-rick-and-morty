@@ -1,15 +1,12 @@
 # Matching Rick and Morty
 
-Classic matching pairs game with Rick and Morty theme. Match all pairs and beat the timer to win!
-Flip pairs of cards to see if they match. If not, they flip face down again. When all pairs have been matched, 
-they player wins.
-
-## UX 
+[Matching Rick and Morty](https://mcoakley92.github.io/matching-rick-and-morty/) is a classic matching pairs game with a Rick and Morty theme. 
 
 The game starts off with 12 cards (6 pairs) facing down, in a randomised grid. The player then choses two cards
 to flip over. If the cards are the same, they stay facing up. If they do not match, they are flipped back 
-over for the player to try again. The player wins when all cards have been matched, in the time allowed. 
+over for the player to try again. The player wins when each pair has been found, in the time allowed. 
 
+## UX 
 * The user wants to be able to click on a card in order to start the game. 
 * Clicking on a card should allow the user to flip it over.
 * When two cards have been flipped, the user wants to know if they are a match or not - if they are a match, they 
