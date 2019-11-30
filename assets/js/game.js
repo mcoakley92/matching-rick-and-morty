@@ -12,12 +12,12 @@ let matches = 0;
 function flipCard() {
     if (lockBoard) return;
     if (this === firstClick) return;
-    
-    this.classList.add("flip"); 
+
+    this.classList.add("flip");
     if (!hasCardFlipped) {
         //first click
         hasCardFlipped = true;
-        firstClick = this; 
+        firstClick = this;
     }
     else {
         hasCardFlipped = false;
@@ -31,13 +31,13 @@ function flipCard() {
  * Checks if first clicked card matches the second clicked card,
  * and adds 1 to "matches" variable if it is
  */
-function checkForMatch(){
-     if (firstClick.dataset.card ===
-        secondClick.dataset.card) { //it's a match!
+function checkForMatch() {
+    if (firstClick.dataset.card ===
+        secondClick.dataset.card) {
         disableCards();
         matches += 1;
-         
-       
+
+
     }
     else { //not a match
         unflipCards();
@@ -48,11 +48,11 @@ function checkForMatch(){
  * Disables matched cards by removing "click" event listener
  * and flipCard function, so they can't be clicked again
  */
- function disableCards() {
+function disableCards() {
     firstClick.removeEventListener("click", flipCard);
     secondClick.removeEventListener("click", flipCard);
 
-resetBoard();
+    resetBoard();
 }
 
 /**
@@ -60,23 +60,23 @@ resetBoard();
  */
 function unflipCards() {
     lockBoard = true;
-    
-     setTimeout(() => {
-            firstClick.classList.remove("flip");
-            secondClick.classList.remove("flip");
-            
-            resetBoard();
-        }, 1500);
+
+    setTimeout(() => {
+        firstClick.classList.remove("flip");
+        secondClick.classList.remove("flip");
+
+        resetBoard();
+    }, 1500);
 }
 
 /**
  * This will reset the board
  */
-function resetBoard(){
+function resetBoard() {
     [hasCardFlipped, lockBoard] = [false, false]; //ES6 destructing assignment
     [firstClick, secondClick] = [null, null];
 }
- 
+
 /**
  * This shuffles all cards on the board
  */
@@ -94,28 +94,28 @@ function resetBoard(){
  * @param {number} secs 
  * @param {string} elem 
  */
-function countDown(secs, elem){
+function countDown(secs, elem) {
     let clock = document.getElementById(elem);
-    clock.innerHTML = "TIME "+secs;
-   
-        if(secs == 0) {
+    clock.innerHTML = "TIME " + secs;
+
+    if (secs == 0) {
         clearTimeout(countDown);
         winnerModal(false);
-      	return clock.innerHTML = "TIME 0";	
-    }   
-      if (matches == 6){
-            clearTimeout(countDown);
-            winnerModal(true);
-                    }
-     
-   else{
-     secs--;
-	setTimeout('countDown('+secs+',"'+elem+'")',1000);
-   }
-  
+        return clock.innerHTML = "TIME 0";
+    }
+    if (matches == 6) {
+        clearTimeout(countDown);
+        winnerModal(true);
+    }
+
+    else {
+        secs--;
+        setTimeout('countDown(' + secs + ',"' + elem + '")', 1000);
+    }
+
 }
 
-countDown(45,"timer");
+countDown(45, "timer");
 
 /**
  * loops through that list - into each one of the cards,
@@ -144,7 +144,7 @@ const modalContent = `<div class="modal fade" id="superModal" tabindex="-1" role
 </div>
 </div>`
 
-$( "#superModal" ).replaceWith(modalContent);
+$("#superModal").replaceWith(modalContent);
 
 function winnerModal(winner) {
     const winnerText = "WINNER!";
@@ -167,19 +167,17 @@ function winnerModal(winner) {
     </div>
   </div>
 </div>`;
- $("#superModal").replaceWith(newModal);
- $("#superModal").modal({
-	keyboard: false,
-	backdrop: "static",
-	show: true
-  });
+    $("#superModal").replaceWith(newModal);
+    $("#superModal").modal({
+        keyboard: false,
+        backdrop: "static",
+        show: true
+    });
 }
 
 /**
  * This refreshes the game, to start from beginning again
  */
-function refreshPage(){
+function refreshPage() {
     window.location.reload();
-} 
-
-
+}
