@@ -115,7 +115,7 @@ function countDown(secs, elem){
   
 }
 
-countDown(10,"timer");
+countDown(45,"timer");
 
 /**
  * loops through that list - into each one of the cards,
