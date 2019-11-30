@@ -35,8 +35,9 @@ All wireframes can be found in the [wireframes folder](https://github.com/mcoakl
 * It has a timer which informs player how much time they have left to win the game
 
 ### Features left to implement
-* More levels can be added in the future. This could be in the form of more cards and the same amount of time, or the 
-same amount of cards with less time, or both. 
+* More levels can be added in the future. 
+    - This could be in the form of more cards and the same amount of time, or the same amount of cards with less time, or both. 
+
 * The game could also have a counter to see how many clicks were used to complete the game 
 
 
@@ -57,16 +58,13 @@ same amount of cards with less time, or both.
     * The project uses Bootstrap for simple design, and for modals and buttons
 
 
-
-
-
 ## Testing
 
 1. I played the game several times, winning and losing to see if all features worked correctly. 
 
 
 * I noticed that when the player either won or lost the game, the timer stayed going into the negative in the background.
-    - This was fixed for the when the game is won by creating the "matches" variable.
+    - This was fixed for the when the game is won by creating the **matches** variable.
 
 ```
 if (matches == 6){
@@ -76,7 +74,7 @@ if (matches == 6){
   ```                  
                                        
    * However, despite also calling `clearTimeout(countDown)` when the timer got to 0, its still went into negative 
-    figures in the background. To overcome this, the code now returns a string of "TIME 0" in place of "TIME "+secs.
+    figures in the background. To overcome this, the code now returns a string of **TIME 0** in place of **"TIME "+secs**.
 
  ```   
     function countDown(secs, elem){
@@ -91,10 +89,10 @@ if (matches == 6){
 
 
 2. I also had friends and family play the game and got their feedback.
-* They noticed that when the "GAME OVER" modal popped up, if you exit it without clicking the restart button, you 
+* They noticed that when the **GAME OVER** modal popped up, if you exit it without clicking the restart button, you 
 could go back into the game and continue clicking cards until you win. 
 
-    - Properties were aded to the modal to make it so the only way to exit the modal and restart the game would be to click on the "Click to Restart" button
+    - Properties were aded to the modal to make it so the only way to exit the modal and restart the game would be to click on the **Click to Restart** button
 
 ```
 $("#superModal").modal({
@@ -121,19 +119,19 @@ to Gitpod so the game could be finished there.
 
 To deploy Matching Rick and Morty from its [GitHub repository](https://github.com/mcoakley92/matching-rick-and-morty);
 
-1. Click "Settings" in the menu bar
-2. Scroll down to "GitHub pages"
-3. Under "Source" click the drop-down menu, and select "Master Branch"
+1. Click **Settings** in the menu bar
+2. Scroll down to **GitHub pages**
+3. Under **Source** click the drop-down menu, and select **Master Branch**
 4. The page is refreshed, and the page is now deployed
-5. To retrieve the link to the deployed website, scroll back down to "GitHub Pages"
+5. To retrieve the link to the deployed website, scroll back down to **GitHub Pages**
 
 ### How to run this project locally
 
 To clone this project from GitHub;
 
 1. Open the [GitHub repository](https://github.com/mcoakley92/matching-rick-and-morty)
-2. Click on the green dropdown button, "Clone or download"
-3. In the "Clone with HTTPs" section, copy the link in the bar
+2. Click on the green dropdown button, **Clone or download**
+3. In the **Clone with HTTPs** section, copy the link in the bar
 4. In your local IDE open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made
 6. Type git clone, and then paste in the copied link
