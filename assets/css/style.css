@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 
-@media only screen and (orientation:landscape){
+@media only screen and (orientation:landscape)and (max-width: 768px){
   #landscape{ display:block; }
   #portrait{ display:none; }
-  body {display:none}
+  
 }
 @media only screen and (orientation:portrait){
   #landscape{ display:none; }
@@ -24,6 +24,13 @@ body {
     display: flex;
     font-size: 16px
     
+}
+
+#landscape{
+    color: #000;
+    font-size: 2rem;
+    margin: auto;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .modal-content {
