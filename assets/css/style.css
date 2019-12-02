@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 
-/*@media only screen and (orientation:landscape)and (max-width: 768px){
-  #landscape{ display:block; }
-  #portrait{ display:none; }
-  
-}
-@media only screen and (orientation:portrait){
-  #landscape{ display:none; }
-  #portrait{ display:block; }
-}*/
-
 #landscape{
 
     display: none;
+    font-size: 2rem;
+    color: #000;
+    font-family: 'Gloria Hallelujah', cursive; 
+    margin: auto;
 
 }
 
