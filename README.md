@@ -107,9 +107,6 @@ $("#superModal").modal({
     - The Bootstrap modal with button provided and easier way to overcome this
 
 
-4. The game was tested on laptop, iPad and mobile. 
-* The game works and scales well on all devices. However in landscape mode for mobile, the player may have to do a little scrolling to access all cards
-
 
 ## Deployment
 
