@@ -106,6 +106,12 @@ $("#superModal").modal({
 * This was difficult to access and render
     - The Bootstrap modal with button provided and easier way to overcome this
 
+### Known bugs
+
+1. The count down timer position changes on figures with 1, for example, 31, 18 or single numbers. 
+
+* This may be fixed in the future, as it was outside the project deadline to rectify the problem. 
+
 
 
 ## Deployment
